@@ -1,0 +1,11 @@
+PEOPLE:
+  - title:
+      - migration: string
+      - formField: input
+      - notes: name of a person
+  - job_title:
+      - migration: string
+      - formField: input
+  - bio:
+      - migration: text
+      - formField: wysiwyg

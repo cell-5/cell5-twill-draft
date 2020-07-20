@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'people' => [
+        'title' => 'People',
+        'module' => true
+    ],
     'settings' => [
         'title' => 'Settings',
         'route' => 'admin.settings',
