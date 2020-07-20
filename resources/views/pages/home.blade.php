@@ -2,6 +2,6 @@
 
 @section('content')
 
-    {{ $site_title  }}
+    
     
 @endsection

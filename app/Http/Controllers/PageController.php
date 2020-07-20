@@ -6,16 +6,17 @@ use Illuminate\Http\Request;
 use A17\Twill\Repositories\SettingRepository;
 
 class PageController extends Controller{
-    protected $site_title;
 
     public function __construct() {
-        $this->site_title = app(SettingRepository::class)->byKey('site_title', 'seo');
     }
 
-    public function index(){
-        $data['site_title'] = $this->site_title;
+    public function index(SettingRepository $settings){
+       $seo = $settings->getFormFields('seo');
 
-        dd($data);
-        return view('pages.home', $data);
+       dd($seo);
+
+        // return view('pages.home', $seo);
     }
+
+    
 };
