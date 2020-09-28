@@ -9,3 +9,66 @@ PEOPLE:
   - bio:
       - migration: text
       - formField: wysiwyg
+
+CLIENTS:
+  - Blogs:
+      - title:
+          - migration: string
+          - formField: input
+      - Description:
+          - migration: text
+          - formField: textarea
+      - content:
+          - migration: block
+          - formField: block_editor
+  - Portfolio:
+      - title:
+          - migration: string
+          - formField: input
+          - notes: Company name
+      - url:
+          - migration: string
+          - formField: input
+          - notes: Website Url
+      - Description:
+          - migration: text
+          - formField: wysiwyg
+
+PROCESS:
+  - title:
+      - migration: string
+      - formField: input
+  - type:
+      - migration: string
+      - formField: select
+  - description:
+      - migration: text
+      - formField: wysiwyg
+
+TECHS:
+  - title:
+      - migration: string
+      - formField: input
+  - description:
+      - migration: text
+      - formField: wysiwyg
+
+VALUES:
+  - title:
+      - migration: string
+      - formField: input
+  - description:
+      - migration: text
+      - formField: wysiwyg
+
+FEEDBACKS:
+  - title:
+      - migration: string
+      - formField: input
+      - notes: Company name
+  - owner:
+      - migration: string
+      - formField: input
+  - comment:
+      - migration: text
+      - formField: wysiwyg
